@@ -469,5 +469,3 @@ Overwriting your own work by accident is bad; overwriting someone else's is wors
 To prevent this happening, Git does not allow you to push changes to a remote repository unless you have merged the contents of the remote repository into your own work.
 
 In this exercise, you have made and committed changes to the `dental` repository locally and want to push your changes to a remote repository.
-=======
->>>>>>> 9f2eb0b5574a20bdb2f5d4ba9a6dcbed88c49583
