@@ -1,5 +1,3 @@
-Introduction to Git
-
 # Basic Workflow
 
 ## What is version control?
