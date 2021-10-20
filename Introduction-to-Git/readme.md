@@ -1,4 +1,6 @@
-# Basic Workflow
+# [Introduction to Git](https://www.datacamp.com/courses/introduction-to-git)
+
+# CH1 - Basic Workflow
 
 ## What is version control?
 
@@ -124,7 +126,7 @@ Passing `-` followed by a number to `git log`  restricts the output to that man
 
 * * *
 
-# Repositories
+# CH2 - Repositories
 
 # How does Git store information?
 
@@ -243,7 +245,7 @@ Using this command, you specify the `setting` you want to change and the `value`
 
 * * *
 
-# Undo
+# CH3 - Undo
 
 ## How can I commit changes selectively?
 
@@ -300,7 +302,7 @@ Similarly `git checkout -- data` will then restore the files in the `data` direc
 
 * * *
 
-# Working with branches
+# CH4 - Working with branches
 
 ## What is a branch?
 
