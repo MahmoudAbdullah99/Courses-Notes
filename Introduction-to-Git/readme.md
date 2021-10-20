@@ -299,6 +299,7 @@ Restoring a file doesn't erase any of the repository's history. Instead, the act
 One way to do this is to give `git reset` a directory. For example, `git reset HEAD data` will unstage any files from the `data` directory. Even better, if you don't provide any files or directories, it will unstage everything. Even even better, `HEAD` is the default commit to unstage, so you can simply write `git reset` to unstage everything.
 
 Similarly `git checkout -- data` will then restore the files in the `data` directory to their previous state. You can't leave the file argument completely blank, but recall from [Introduction to Shell for Data Science](https://www.datacamp.com/courses/introduction-to-shell-for-data-science) that you can refer to the current directory as `.`. So `git checkout -- .` will revert all files in the current directory.
+<<<<<<< HEAD
 
 * * *
 
@@ -468,3 +469,5 @@ Overwriting your own work by accident is bad; overwriting someone else's is wors
 To prevent this happening, Git does not allow you to push changes to a remote repository unless you have merged the contents of the remote repository into your own work.
 
 In this exercise, you have made and committed changes to the `dental` repository locally and want to push your changes to a remote repository.
+=======
+>>>>>>> 9f2eb0b5574a20bdb2f5d4ba9a6dcbed88c49583
