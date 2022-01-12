@@ -57,6 +57,8 @@ The `DataFrame` object in pandas is a more appropriate structure in which to sto
 
 Use the `nrows` argument to specify the number of rows you want to read! Set the `header` argument to `false` if your data has no header. `na_values` argument takes a list of strings to recognize as `NA`/`NaN`.  `comment` takes characters that comments occur after in the file.
 
+***
+
 # Importing data from other file types
 
 ## Introduction to other file types
@@ -70,4 +72,21 @@ import os
 wd = os.getcwd()
 # Output the contents of the directory to the shell 
 os.listdir(wd)
+```
+
+## Loading a pickled file
+
+There are a number of datatypes that cannot be saved easily to flat files, such as lists and dictionaries. If you want your files to be human readable, you may want to save them as text files in a clever manner. JSONs, which you will see in a later chapter, are appropriate for Python dictionaries.
+
+However, if you merely want to be able to import them into Python, you can [serialize](https://en.wikipedia.org/wiki/Serialization) them. All this means is converting the object into a sequence of bytes, or a bytestream.
+
+To read a binary file with `open()` you need to specify the second argument:
+
+```py
+# Import pickle package
+import pickle
+
+# Open pickle file and load data: d
+with open('data.pkl', 'rb') as file:
+    d = pickle.load(file)
 ```
