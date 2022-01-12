@@ -56,3 +56,18 @@ The `DataFrame` object in pandas is a more appropriate structure in which to sto
 - `pandas.read_csv(filepath_or_buffer, sep=NoDefault.no_default, delimiter=None, header='infer', names=NoDefault.no_default, index_col=None, usecols=None, dtype=None, skiprows=None, skipfooter=0, nrows=None, na_values=None, parse_dates=False, date_parser=None, comment=None)`
 
 Use the `nrows` argument to specify the number of rows you want to read! Set the `header` argument to `false` if your data has no header. `na_values` argument takes a list of strings to recognize as `NA`/`NaN`.  `comment` takes characters that comments occur after in the file.
+
+# Importing data from other file types
+
+## Introduction to other file types
+
+Python [library `os`](https://docs.python.org/2/library/os.html) consists of miscellaneous operating system interfaces, which can be used for example to print the current working directory.
+
+```py
+# Import the library
+import os
+# Store the current directory in wd variable        
+wd = os.getcwd()
+# Output the contents of the directory to the shell 
+os.listdir(wd)
+```
