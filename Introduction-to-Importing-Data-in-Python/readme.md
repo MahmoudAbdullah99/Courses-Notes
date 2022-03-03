@@ -105,3 +105,14 @@ xls = pd.ExcelFile(file)
 # Print sheet names
 print(xls.sheet_names)
 ```
+
+## Importing sheets from Excel files
+
+Suppose that the spreadsheet `'battledeath.xlsx'`  Excel file contains two sheets, `'2002'` and `'2004'`. To import these sheets, there are two ways; by name and by index:
+
+```py
+# Load a sheet into a DataFrame by name: df1
+df1 = xls.parse('2004')
+# Load a sheet into a DataFrame by index: df2
+df2 = xls.parse(0)
+```
