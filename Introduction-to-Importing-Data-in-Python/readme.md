@@ -90,3 +90,18 @@ import pickle
 with open('data.pkl', 'rb') as file:
     d = pickle.load(file)
 ```
+
+## Listing sheets in Excel files
+
+We can use `pandas` to import Excel spreadsheets and how to list the names of the sheets in any loaded .xlsx file. An Excel file imported into a variable `spreadsheet`, you can retrieve a list of the sheet names using the attribute `spreadsheet.sheet_names`
+
+```py
+# Import pandas
+import pandas as pd
+# Assign spreadsheet filename: file
+file = 'spreadsheet.xlsx'
+# Load spreadsheet: xls
+xls = pd.ExcelFile(file)
+# Print sheet names
+print(xls.sheet_names)
+```
